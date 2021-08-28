@@ -5,13 +5,6 @@ pipeline {
         gradle 'Gradle'
     }
     stages {
-        stage("test") {
-            steps {
-                script {
-                    buildJar './gradlew'
-                }
-            }
-        }
         stage("DockerLogin") {
             steps {
                 script {
