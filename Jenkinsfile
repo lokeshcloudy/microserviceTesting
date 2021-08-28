@@ -8,7 +8,7 @@ pipeline {
         stage("test") {
             steps {
                 script {
-                    buildJar 'build'
+                    buildJar './gradlew'
                 }
             }
         }
