@@ -2,13 +2,13 @@
 pipeline {
     agent any
     tools {
-        gradle 'gradle'
+        gradle 'Gradle'
     }
     stages {
         stage("test") {
             steps {
                 script {
-                    buildJar './gradlew'
+                    buildJar './gradlew -v'
                 }
             }
         }
